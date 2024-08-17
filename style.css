@@ -11,14 +11,46 @@
   margin: 45px;
   padding: 0 50px 0 50px;
 }
-.main-left {
-  height: 100%;
-  width: 50%;
-  background-image: url(./home-phones-2x.png);
-  background-size: 400px 585px;
-  background-repeat: no-repeat;
-}
 .main-right {
   height: 100%;
-  width: 50%;
+  width: 40%;
+}
+.main-right .form-box {
+  border: 1px solid gray;
+}
+.main-right .img-insta {
+  margin: 10% 0 10% 0;
+  display: flex;
+  justify-content: center;
+}
+.main-right .form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form .input-txt {
+  width: 78%;
+  height: 5vh;
+  align-self: center;
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 8px;
+}
+.form .input-txt::placeholder {
+  font-size: 12px;
+}
+.form .input-btn {
+  width: 82%;
+  align-self: center;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #0094f6d2;
+  opacity: 7;
+  border: none;
+  border-radius: 10px;
+  height: 6vh;
+  padding: 8px;
+  margin-top: 5px;
 }
