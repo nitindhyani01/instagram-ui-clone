@@ -54,3 +54,18 @@
   padding: 8px;
   margin-top: 5px;
 }
+.separation {
+  margin: 14px 45px 22px;
+  display: flex;
+  flex-direction: row;
+}
+.separation .line {
+  border: 1px solid gray;
+  top: 0.45em;
+  height: 1px;
+  /* position: relative; */
+}
+.separation .txt-box {
+  /* position: absolute; */
+  z-index: 1;
+}
