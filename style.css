@@ -63,9 +63,35 @@
   border: 1px solid gray;
   top: 0.45em;
   height: 1px;
-  /* position: relative; */
+  position: relative;
 }
 .separation .txt-box {
-  /* position: absolute; */
-  z-index: 1;
+  position: absolute;
+  z-index: -1;
+}
+.fb {
+  display: flex;
+  justify-content: center;
+}
+.fb img {
+  width: 20px;
+  height: 20px;
+}
+.fb span:nth-child(2) {
+  font-size: 12px;
+  padding: 5px;
+  font-weight: 700;
+  color: #385185;
+}
+.forgot-pass {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.form-box-2 {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
