@@ -95,3 +95,17 @@
   justify-content: center;
   padding: 30px;
 }
+.get-app > :nth-child(1) {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.get-app > :nth-child(2) {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.image-get-app {
+  height: 40px;
+  width: 125px;
+}
