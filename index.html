@@ -8,14 +8,20 @@
   </head>
   <body>
     <div class="hero">
-      <div class="main-left"></div>
+      <div class="main-left">
+        <img src="screenshot1-2x.png" alt="img" id="changingImage" />
+      </div>
       <div class="main-right">
         <div class="form-box">
           <div class="img-insta">
             <img src="instalogo.png" alt="" />
           </div>
           <div class="form">
-            <input type="text" class="input-txt" placeholder="Phone number, username or email"/>
+            <input
+              type="text"
+              class="input-txt"
+              placeholder="Phone number, username or email"
+            />
             <input type="password" class="input-txt" placeholder="Password" />
             <input type="button" value="Log in" class="input-btn" />
           </div>
@@ -24,22 +30,53 @@
             <div class="txt-box">OR</div>
           </div>
           <div class="fb">
-            <span><img src="./icons8-facebook-48.png" alt="fb"></span>
+            <span><img src="./icons8-facebook-48.png" alt="fb" /></span>
             <span>Log in with Facebook</span>
           </div>
           <div class="forgot-pass">Forgot password?</div>
         </div>
         <div class="form-box form-box-2">
           <span>Don't have an account?</span>
-          <span><a href="#" > Sign up</a></span>
+          <span><a href="#"> Sign up</a></span>
         </div>
         <div class="get-app">
           <div>Get the app</div>
-          <div><img src="googleplaystore.png" alt="" class="image-get-app">
-          <img src="microsoftstore.png" alt="" class="image-get-app">
+          <div>
+            <img src="googleplaystore.png" alt="" class="image-get-app" />
+            <img src="microsoftstore.png" alt="" class="image-get-app" />
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div>
+        Meta About Blog Jobs Help API Privacy Terms Locations Instagram Lite
+        Threads Contact uploading and non-users Meta Verified
+      </div>
+    </footer>
+    <script>
+      const images = [
+        "screenshot1-2x.png",
+        "screenshot2-2x.png",
+        "screenshot3-2x.png",
+        "screenshot4-2x.png",
+      ];
+      let currentIndex = 0;
+
+      function changeImage() {
+        const imgElement = document.getElementById("changingImage");
+        imgElement.classList.remove("fade-in");
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          imgElement.src = images[currentIndex];
+          imgElement.classList.add("fade-in");
+        }, 100);
+      }
+
+      setInterval(changeImage, 3000);
+      window.onload = () => {
+        document.getElementById("changingImage").classList.add("fade-in");
+      };
+    </script>
   </body>
 </html>
