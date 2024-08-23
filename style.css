@@ -133,3 +133,11 @@ footer {
   padding: 50px;
   color: gray;
 }
+@media (max-width: 930px) {
+  .main-left {
+    visibility: hidden;
+  }
+  .main-right {
+    justify-content: center;
+  }
+}
