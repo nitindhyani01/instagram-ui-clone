@@ -4,7 +4,7 @@
   font-family: "poppins", sans-serif;
 }
 .hero {
-  height: 100vh;
+  height: fit-content;
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -12,18 +12,17 @@
   padding: 0 50px 0 50px;
 }
 .main-left {
-  height: 100%;
-  width: 40%;
+  height: fit-content;
   background-image: url(./home-phones-2x.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #changingImage {
-  height: 87%;
+  height: 62%;
   width: 55%;
   padding: 20px;
-  margin-left: 28%;
-  opacity: 0;
+  margin-left: 29%;
+  margin-top: 5px;
   transition: opacity 1s;
 }
 #changingImage.fade-in {
@@ -73,15 +72,14 @@
   margin-top: 5px;
 }
 .separation {
-  margin: 14px 45px 22px;
+  width: 100%;
+  margin-top: 14px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.separation .line {
-  border: 1px solid gray;
-  top: 0.45em;
-  height: 1px;
-  position: relative;
+.separation span hr{
+  width: 3rem;
 }
 .separation .txt-box {
   position: absolute;
@@ -135,9 +133,14 @@ footer {
 }
 @media (max-width: 930px) {
   .main-left {
-    visibility: hidden;
+    display: none;
   }
-  .main-right {
-    justify-content: center;
+  .hero{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-right{
+    width: 80%;
   }
 }
